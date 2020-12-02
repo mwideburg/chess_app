@@ -1,0 +1,34 @@
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.NavBar button {
+    height: 20px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.Links1 {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.Links2 {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
