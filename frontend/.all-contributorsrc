@@ -1,0 +1,99 @@
+{
+  "projectName": "chessboardjsx",
+  "projectOwner": "willb335",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "willb335",
+      "name": "Will",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/10157307?v=4",
+      "profile": "https://github.com/willb335",
+      "contributions": [
+        "code",
+        "doc",
+        "example",
+        "test"
+      ]
+    },
+    {
+      "login": "a-bash",
+      "name": "Andrew Bashelor",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/146082?v=4",
+      "profile": "https://github.com/a-bash",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "yougotgotyo",
+      "name": "yougotgotyo",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/25490975?v=4",
+      "profile": "https://chadburg.com/",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "csharptest",
+      "name": "Roger Knapp",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/385366?v=4",
+      "profile": "http://csharptest.net",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "slig",
+      "name": "Tiago Serafim",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/37779?v=4",
+      "profile": "https://github.com/slig",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "furrykef",
+      "name": "Kef Schecter",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/536006?v=4",
+      "profile": "http://www.furrykef.com/",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "nilsga",
+      "name": "Nils-Helge Garli Hegvik",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/42919?v=4",
+      "profile": "http://www.lånekalkulatoren.no",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "levidurfee",
+      "name": "Levi Durfee",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/10798199?v=4",
+      "profile": "https://levi.lol/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "altruisticsoftware",
+      "name": "Chris",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/12105346?v=4",
+      "profile": "https://github.com/altruisticsoftware",
+      "contributions": [
+        "code"
+      ]
+    }
+  ]
+}
