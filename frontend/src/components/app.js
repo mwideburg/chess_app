@@ -23,8 +23,8 @@ const App = () => (
       <ProtectedRoute exact path="/profile" component={ProfileContainer} />
       <ProtectedRoute exact path="/new_tweet" component={TweetComposeContainer} />
     </Switch>
-
-    <Chess/>
+    <Chess />
+    
   </div>
 );
 

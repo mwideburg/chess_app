@@ -2,18 +2,18 @@
 
 > Transforms new.target meta property
 
-See our website [@babel/plugin-transform-new-target](https://new.babeljs.io/docs/en/next/babel-plugin-transform-new-target.html) for more information.
+See our website [@babel/plugin-transform-new-target](https://babeljs.io/docs/en/next/babel-plugin-transform-new-target.html) for more information.
 
 ## Install
 
 Using npm:
 
 ```sh
-npm install --save @babel/plugin-transform-new-target
+npm install --save-dev @babel/plugin-transform-new-target
 ```
 
 or using yarn:
 
 ```sh
-yarn add --save @babel/plugin-transform-new-target
+yarn add @babel/plugin-transform-new-target --dev
 ```

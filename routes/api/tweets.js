@@ -7,6 +7,7 @@ const Tweet = require('../../models/Tweet');
 const validateTweetInput = require('../../validation/tweets');
 
 router.get('/', (req, res) => {
+  
     Tweet.find()
         .sort({ date: -1 })
         .then(tweets => res.json(tweets))
