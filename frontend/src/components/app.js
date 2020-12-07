@@ -11,6 +11,7 @@ import ProfileContainer from './profile/profile_container';
 import TweetComposeContainer from './tweets/tweet_compose_container';
 import Chess from '../Demo'
 import './App.scss';
+
 const App = () => (
   <div>
     <NavBarContainer />

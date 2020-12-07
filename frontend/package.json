@@ -69,6 +69,7 @@
     "redux-thunk": "^2.3.0",
     "roughjs": "2.2.3",
     "semantic-release": "^15.4.1",
+    "socket.io": "^3.0.4",
     "style-loader": "0.21.0",
     "travis-deploy-once": "^5.0.0",
     "validator": "^13.5.1",
