@@ -10,7 +10,16 @@ import { logout } from './actions/session_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
-  
+  var http = require("http")
+  var io = require('socket.io')(http);
+
+  io.on('connection', function (socket) {
+    console.log('new connection');
+
+    socket.on('message', function (msg) {
+      console.log('Got message from client: ' + msg);
+    });
+  });
   if (localStorage.jwtToken) {
     setAuthToken(localStorage.jwtToken);
 
