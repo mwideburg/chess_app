@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rmiglin/MTA_tracker.git"
+    "url": "git+https://github.com/mwideburg/chess_app"
   },
   "keywords": [
     "mta",
@@ -52,7 +52,7 @@
     "bronx"
   ],
   "bugs": {
-    "url": "https://github.com/rmiglin/MTA_tracker/issues"
+    "url": "https://github.com/mwideburg/chess_apps/issues"
   },
-  "homepage": "https://github.com/rmiglin/MTA_tracker#readme"
+  "homepage": "https://github.com/mwideburg/chess_app#readme"
 }

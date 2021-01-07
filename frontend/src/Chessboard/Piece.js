@@ -179,9 +179,10 @@ const pieceSource = {
     } = props;
     const dropResults = monitor.getDropResult();
     const didDrop = monitor.didDrop();
-
+    
     // trash piece when dropped off board
     if (!didDrop && dropOffBoard === 'trash') {
+      
       return setPosition({ sourceSquare: square, piece });
     }
 
@@ -204,6 +205,8 @@ const pieceSource = {
         });
       }
       // set new position
+      
+      
       setPosition({
         sourceSquare: square,
         targetSquare: dropResults.target,
@@ -226,7 +229,7 @@ export default DragSource(ItemTypes.PIECE, pieceSource, collect)(Piece);
 
 const isActivePiece = (square, targetSquare) =>
   targetSquare && targetSquare === square;
-
+  
 const getTransitionCoordinates = ({
   getSquareCoordinates,
   sourceSq,

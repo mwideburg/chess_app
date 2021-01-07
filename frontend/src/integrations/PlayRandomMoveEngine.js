@@ -44,12 +44,14 @@ class HumanVsRandom extends Component {
       to: targetSquare,
       promotion: 'q' // always promote to a queen for example simplicity
     });
-
+    
     // illegal move
     if (move === null) return;
 
     this.setState({ fen: this.game.fen() });
 
+    // RECORD MOVE HERE!!!
+    
     window.setTimeout(this.makeRandomMove, 1000);
   };
 
@@ -58,13 +60,13 @@ class HumanVsRandom extends Component {
       squareStyles: { [square]: { backgroundColor: 'DarkTurquoise' } },
       pieceSquare: square
     });
-
+    
     let move = this.game.move({
       from: this.state.pieceSquare,
       to: square,
       promotion: 'q' // always promote to a queen for example simplicity
     });
-
+    
     // illegal move
     if (move === null) return;
 

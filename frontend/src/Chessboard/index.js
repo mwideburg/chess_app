@@ -256,7 +256,7 @@ class Chessboard extends Component {
 
       // get board position for user
       getPosition(positionFromProps);
-
+      
       // Give piece time to transition.
       if (waitForTransition) {
         return new Promise(resolve => {
@@ -380,7 +380,7 @@ class Chessboard extends Component {
   setPosition = ({ sourceSquare, targetSquare, piece }) => {
     const { currentPosition } = this.state;
     const { getPosition, dropOffBoard } = this.props;
-
+    
     if (sourceSquare === targetSquare) return;
 
     if (dropOffBoard === 'trash' && !targetSquare) {

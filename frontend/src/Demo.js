@@ -25,7 +25,7 @@ class Demo extends Component {
       <div>
         <div style={boardsContainer}>
          
-          <WithMoveValidation />
+          <PlayRandomMoveEngine />
        
         </div>
       </div>

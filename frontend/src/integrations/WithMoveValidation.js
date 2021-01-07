@@ -8,7 +8,7 @@ class HumanVsHuman extends Component {
   static propTypes = { children: PropTypes.func };
 
   state = {
-    fen: 'start',
+    fen: "start",
     // square styles for active drop squares
     dropSquareStyle: {},
     // custom square styles
@@ -23,9 +23,11 @@ class HumanVsHuman extends Component {
   componentDidMount() {
     this.game = new Chess();
   }
+  
 
   // keep clicked square style and remove hint squares
   removeHighlightSquare = () => {
+    
     this.setState(({ pieceSquare, history }) => ({
       squareStyles: squareStyling({ pieceSquare, history })
     }));
@@ -60,19 +62,24 @@ class HumanVsHuman extends Component {
 
   onDrop = ({ sourceSquare, targetSquare }) => {
     // see if the move is legal
+    
     let move = this.game.move({
       from: sourceSquare,
       to: targetSquare,
       promotion: 'q' // always promote to a queen for example simplicity
     });
-
+    
     // illegal move
     if (move === null) return;
-    this.setState(({ history, pieceSquare }) => ({
+    
+    this.setState(({ history, pieceSquare }) => { 
+      
+      return({
       fen: this.game.fen(),
       history: this.game.history({ verbose: true }),
       squareStyles: squareStyling({ pieceSquare, history })
-    }));
+    })});
+    
   };
 
   onMouseOverSquare = square => {
@@ -116,10 +123,10 @@ class HumanVsHuman extends Component {
       to: square,
       promotion: 'q' // always promote to a queen for example simplicity
     });
-
+    
     // illegal move
     if (move === null) return;
-
+    
     this.setState({
       fen: this.game.fen(),
       history: this.game.history({ verbose: true }),
@@ -134,7 +141,7 @@ class HumanVsHuman extends Component {
 
   render() {
     const { fen, dropSquareStyle, squareStyles } = this.state;
-
+    
     return this.props.children({
       squareStyles,
       position: fen,
@@ -150,6 +157,7 @@ class HumanVsHuman extends Component {
 }
 
 export default function WithMoveValidation() {
+  
   return (
     <div>
       <HumanVsHuman>
@@ -190,7 +198,7 @@ export default function WithMoveValidation() {
 const squareStyling = ({ pieceSquare, history }) => {
   const sourceSquare = history.length && history[history.length - 1].from;
   const targetSquare = history.length && history[history.length - 1].to;
-
+  
   return {
     [pieceSquare]: { backgroundColor: 'rgba(255, 255, 0, 0.4)' },
     ...(history.length && {
